@@ -51,10 +51,10 @@
             </intent-filter>
         </receiver>-->
 
-<!-- android:theme="@style/MyFullscreenTheme" -->
+
         <activity
             android:screenOrientation="portrait"
-            
+            android:theme="@style/MyFullscreenTheme"
             android:name=".FullscreenActivity">
 
             <intent-filter>

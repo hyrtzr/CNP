@@ -14,6 +14,7 @@ import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
@@ -25,6 +26,7 @@ import android.widget.TextView;
 
 import com.google.inject.Key;
 import com.hyrt.cnp.R;
+import com.hyrt.cnp.base.account.utils.LogHelper;
 import com.hyrt.cnp.base.service.MyService;
 import com.hyrt.cnp.base.view.HackyViewPager;
 import com.hyrt.cnp.base.view.ImageAdapter;
@@ -498,20 +500,30 @@ public class BaseActivity extends ActionBarActivity implements RoboContext {
         popWin.setTouchable(true);
         popWin.showAtLocation(view, Gravity.CENTER, 0, 0);
         final HackyViewPager mViewPager = (HackyViewPager) popView.findViewById(R.id.pop_img);
-        ArrayList<ImageView> imageViews = new ArrayList<ImageView>();
+        ArrayList<PhotoView> imageViews = new ArrayList<PhotoView>();
         for (int i = 0; i < imageurls.size(); i++) {
-            ImageView imageView = new ImageView(context);
+            PhotoView imageView = new PhotoView(context);
             imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
             imageViews.add(imageView);
         }
-        final ViewGroup.LayoutParams mParams = mViewPager.getLayoutParams();
+//        final ViewGroup.LayoutParams mParams = mViewPager.getLayoutParams();
         WindowManager wm = (WindowManager) context.getSystemService(context.WINDOW_SERVICE);
-        final int screenWidth = wm.getDefaultDisplay().getWidth();
-        mParams.width = screenWidth;
-        mParams.height = screenWidth;
+//        final int screenWidth = wm.getDefaultDisplay().getWidth();
+//        mParams.width = screenWidth;
+//        mParams.height = screenWidth;
+//        mParams.width = -1;
+//        mParams.height = -1;
+//        mViewPager.setLayoutParams(mParams);
+        mViewPager.setCallback(new HackyViewPager.TouchCallback() {
+			
+			@Override
+			public void onTouch() {
+				popWin.dismiss();
+			}
+		});
 
         ImageAdapter mImageAdapter = new ImageAdapter(imageViews, imageurls, this);
-        mImageAdapter.setCallback(new ImageAdapter.ImageAdapterCallback() {
+        /*mImageAdapter.setCallback(new ImageAdapter.ImageAdapterCallback() {
             @Override
             public void onLoadingComplete(String url, Bitmap bitmap) {
                 int curPosition = mViewPager.getCurrentItem();
@@ -528,7 +540,7 @@ public class BaseActivity extends ActionBarActivity implements RoboContext {
                     mViewPager.setLayoutParams(mParams);
                 }
             }
-        });
+        });*/
         mViewPager.setAdapter(mImageAdapter);
         mViewPager.setCurrentItem(postion);
     }
@@ -600,21 +612,29 @@ public class BaseActivity extends ActionBarActivity implements RoboContext {
         tv_photo_detail.setOnClickListener(mOclickListener);
         layout_photo_btn.setOnClickListener(mOclickListener);
 
-        ArrayList<ImageView> imageViews = new ArrayList<ImageView>();
+        ArrayList<PhotoView> imageViews = new ArrayList<PhotoView>();
         for (int i = 0; i < imageurls.size(); i++) {
-            ImageView imageView = new ImageView(context);
+        	PhotoView imageView = new PhotoView(context);
             imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
             imageViews.add(imageView);
         }
 
         final ViewGroup.LayoutParams mParams = mViewPager.getLayoutParams();
         WindowManager wm = (WindowManager) context.getSystemService(context.WINDOW_SERVICE);
-        final int screenWidth = wm.getDefaultDisplay().getWidth();
-        mParams.width = screenWidth;
-        mParams.height = screenWidth;
+//        final int screenWidth = wm.getDefaultDisplay().getWidth();
+        mParams.width = -1;
+        mParams.height = -1;
+        mViewPager.setLayoutParams(mParams);
+        mViewPager.setCallback(new HackyViewPager.TouchCallback() {
+			
+			@Override
+			public void onTouch() {
+				popWin.dismiss();
+			}
+		});
 
         ImageAdapter mImageAdapter = new ImageAdapter(imageViews, imageurls, this);
-        mImageAdapter.setCallback(new ImageAdapter.ImageAdapterCallback() {
+/*        mImageAdapter.setCallback(new ImageAdapter.ImageAdapterCallback() {
             @Override
             public void onLoadingComplete(String url, Bitmap bitmap) {
 //                android.util.Log.i(TAG, "url:"+url);
@@ -635,7 +655,7 @@ public class BaseActivity extends ActionBarActivity implements RoboContext {
                     mViewPager.setLayoutParams(mParams);
                 }
             }
-        });
+        });*/
         mViewPager.setAdapter(mImageAdapter);
         mViewPager.setCurrentItem(postion);
 
@@ -692,20 +712,27 @@ public class BaseActivity extends ActionBarActivity implements RoboContext {
         popWin.setTouchable(true);
         popWin.showAtLocation(view, Gravity.CENTER, 0, 0);
         final HackyViewPager mViewPager = (HackyViewPager) popView.findViewById(R.id.pop_img);
-        ArrayList<ImageView> imageViews = new ArrayList<ImageView>();
+        ArrayList<PhotoView> imageViews = new ArrayList<PhotoView>();
         for (int i = 0; i < imageurls.size(); i++) {
-            ImageView imageView = new ImageView(context);
+        	PhotoView imageView = new PhotoView(context);
             imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
             imageViews.add(imageView);
         }
         final ViewGroup.LayoutParams mParams = mViewPager.getLayoutParams();
         WindowManager wm = (WindowManager) context.getSystemService(context.WINDOW_SERVICE);
-        final int screenWidth = wm.getDefaultDisplay().getWidth();
-        mParams.width = screenWidth;
-        mParams.height = screenWidth;
+//        final int screenWidth = wm.getDefaultDisplay().getWidth();
+        mParams.width = -1;
+        mParams.height = -1;
+        mViewPager.setCallback(new HackyViewPager.TouchCallback() {
+			
+			@Override
+			public void onTouch() {
+				popWin.dismiss();
+			}
+		});
 
         ImageAdapter mImageAdapter = new ImageAdapter(imageViews, imageurls, this);
-        mImageAdapter.setCallback(new ImageAdapter.ImageAdapterCallback() {
+        /*mImageAdapter.setCallback(new ImageAdapter.ImageAdapterCallback() {
             @Override
             public void onLoadingComplete(String url, Bitmap bitmap) {
                 int curPosition = mViewPager.getCurrentItem();
@@ -722,7 +749,7 @@ public class BaseActivity extends ActionBarActivity implements RoboContext {
                     mViewPager.setLayoutParams(mParams);
                 }
             }
-        });
+        });*/
 
         mViewPager.setAdapter(mImageAdapter);
         mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {

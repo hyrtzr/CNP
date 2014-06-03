@@ -28,7 +28,7 @@ import uk.co.senab.photoview.PhotoView;
  */
 public class ImageAdapter extends PagerAdapter {
 
-    private ArrayList<ImageView> imageViews;
+    private ArrayList<PhotoView> imageViews;
     private ArrayList<String> imageurls;
     private Context context;
     private boolean isfirst=true;
@@ -37,7 +37,7 @@ public class ImageAdapter extends PagerAdapter {
     private Map<String, Bitmap> images = new HashMap<String, Bitmap>();
     private String positionValue = "";
 
-    public ImageAdapter(ArrayList<ImageView> imageViews,ArrayList<String> imageurls,Context context){
+    public ImageAdapter(ArrayList<PhotoView> imageViews,ArrayList<String> imageurls,Context context){
         this.imageViews=imageViews;
         this.imageurls=imageurls;
         this.context=context;

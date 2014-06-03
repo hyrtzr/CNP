@@ -191,6 +191,7 @@ public class ClassroomIndexActivity extends BaseActivity{
                             photoUpload.getFromLocal();
                         }else if(view.getId() == R.id.tv_change_intro){
                             mPhotoSelctDialog.dismiss();
+                            classroominfo.setSelection(classroominfo.getText().length());
                             classroominfo.setCursorVisible(true);
                             classroominfo.setEnabled(true);
                             classroominfo.setFocusable(true);

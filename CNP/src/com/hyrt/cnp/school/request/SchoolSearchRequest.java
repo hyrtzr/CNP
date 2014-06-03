@@ -51,6 +51,6 @@ public class SchoolSearchRequest extends NotNeedLoginBaseRequest{
     }
 
     public String getcachekey(){
-        return "SchoolSearch"+keytName+keytDistrict+keytProperty+keytScale+lng+lat+province;
+        return "SchoolSearch"+keytName+keytDistrict+keytProperty+keytScale+lng+lat+province+System.currentTimeMillis();
     }
 }

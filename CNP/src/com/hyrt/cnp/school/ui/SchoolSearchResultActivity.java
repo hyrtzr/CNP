@@ -24,6 +24,7 @@ import com.hyrt.cnp.base.account.request.BaseUserVarRequest;
 import com.hyrt.cnp.base.account.requestListener.BaseUserVarRequestListener;
 import com.hyrt.cnp.base.account.ui.LightProgressDialog;
 import com.hyrt.cnp.base.account.utils.AlertUtils;
+import com.hyrt.cnp.base.account.utils.LogHelper;
 import com.hyrt.cnp.base.view.XListView;
 import com.hyrt.cnp.R;
 import com.hyrt.cnp.school.adapter.SchoolSearchResultAdapter;
@@ -290,13 +291,16 @@ public class SchoolSearchResultActivity extends BaseActivity {
             = new SchoolSearchRequestListener.RequestListener() {
         @Override
         public void onRequestSuccess(List<SchoolSearch> datas) {
+        	LogHelper.i("tag", "datas:"+datas +" mRefreshState"+mRefreshState);
             if(mRefreshState != ON_LOAD_MORE){
                 mDatas.clear();
                 xlvSearchResult.setSelection(0);
             }
+            
             if(datas != null){
                 mDatas.addAll(datas);
             }
+            LogHelper.i("tag", "mDatas:"+mDatas.size());
             if (mDatas.size() <= 0) {
                xlvSearchResult.setVisibility(View.GONE);
                searchResultPrompt.setVisibility(View.VISIBLE);

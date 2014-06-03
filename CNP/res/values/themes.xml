@@ -11,7 +11,7 @@
     <style name="MyFullscreenTheme" parent="@style/Theme.Base.AppCompat">
         <item name="android:windowBackground">@drawable/cnp_loading</item>
         <item name="android:windowNoTitle">true</item>
-        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowFullscreen">false</item>
         <item name="android:windowContentOverlay">@null</item>
     </style> 
 

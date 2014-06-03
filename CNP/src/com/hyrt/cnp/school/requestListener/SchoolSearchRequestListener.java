@@ -6,6 +6,7 @@ import android.widget.Toast;
 import com.hyrt.cnp.base.account.model.SchoolSearch;
 import com.hyrt.cnp.base.account.requestListener.BaseRequestListener;
 import com.hyrt.cnp.base.account.utils.Log;
+import com.hyrt.cnp.base.account.utils.LogHelper;
 import com.octo.android.robospice.persistence.exception.SpiceException;
 
 import java.lang.reflect.Array;
