@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cnp_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_commentlist_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_transmit_num"
+            style="@style/large_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:text="0转发"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            style="@style/large_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:text=" | "
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tv_review_num"
+            style="@style/large_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:text="0评论" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/view_margin_small"/>
+    <!--<fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></fragment>
+
+    <android.support.v4.app.Fragment
+        android:id="@+id/fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />-->
+    <!--<LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layout_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/view_bottom_margin">
+        <include layout="@layout/layout_bottom_num"></include>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/layout_commentlist_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ListView
+            android:id="@+id/commentlist_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="@dimen/view_margin_small"
+            android:layout_margin="@dimen/view_margin_small"
+            android:background="@drawable/cnp_bg"/>
+    </LinearLayout>-->
+</LinearLayout>

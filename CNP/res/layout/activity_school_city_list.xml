@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cnp_bg">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/cnp_school_search_result_bar_hegiht"
+        android:background="#fff"
+        android:layout_weight="0">
+
+        <TextView
+            android:id="@+id/tv_school_city_list_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/medium_tv"
+            android:textColor="@color/search_city_list_line"
+            android:text="@string/school_city_list_cancle"/>
+
+        <TextView
+            android:id="@+id/tv_search_result_title"
+            style="@style/large_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/school_city_list" />
+
+     <ImageView
+         android:layout_width="fill_parent"
+         android:layout_height="1dp"
+         android:background="@color/search_city_list_line"
+         android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <com.hyrt.cnp.base.view.BounceListView
+            android:id="@+id/lv_school_city_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+        <TextView
+            android:id="@+id/tv_school_city_list_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="暂无数据"
+            android:textColor="@android:color/black"
+            android:visibility="gone"/>
+        </RelativeLayout>
+
+</LinearLayout>

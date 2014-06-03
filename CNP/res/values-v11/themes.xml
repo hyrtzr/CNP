@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 11版本以上的父级样式 -->
+    <style name="Theme.Edu.v" parent="@style/Theme.Base.AppCompat">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>  
+
+    <!-- 11到14的全局样式 -->
+   <style name="Theme.Edu.Sherlock" parent="Theme.Edu.v">
+        <item name="android:actionBarStyle">@style/Widget.Edu.ActionBar</item>
+        <item name="android:actionMenuTextAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:actionMenuTextColor">#cccccc</item>
+    </style> 
+
+</resources>

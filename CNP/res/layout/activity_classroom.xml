@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cnp_bg">
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layout_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/view_bottom_margin">
+        <include layout="@layout/layout_bottom_num"></include>
+    </LinearLayout>
+    <com.hyrt.cnp.base.view.MtScrollView
+        android:layout_above="@id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_class_min"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="小班"
+                style="@style/large_tv"
+                android:layout_marginTop="@dimen/view_margin_small"/>
+            <com.hyrt.cnp.school.view.MyGridView
+                android:id="@+id/cnp_gridview_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:verticalSpacing="6dp"
+                android:horizontalSpacing="6dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                android:layout_margin="@dimen/view_margin_small"/>
+
+            <TextView
+                android:id="@+id/tv_class_mun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="中班"
+                style="@style/large_tv"
+                android:layout_marginTop="@dimen/view_margin_small"/>
+
+            <com.hyrt.cnp.school.view.MyGridView
+                android:id="@+id/cnp_gridview_mun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:verticalSpacing="6dp"
+                android:horizontalSpacing="6dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                android:layout_margin="@dimen/view_margin_small" />
+
+            <TextView
+                android:id="@+id/tv_class_max"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="大班"
+                style="@style/large_tv"
+                android:layout_marginTop="@dimen/view_margin_small"/>
+
+            <com.hyrt.cnp.school.view.MyGridView
+                android:id="@+id/cnp_gridview_max"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:verticalSpacing="6dp"
+                android:horizontalSpacing="6dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                android:layout_margin="@dimen/view_margin_small" />
+            <TextView
+                android:id="@+id/tv_class_custody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="托班"
+                style="@style/large_tv"
+                android:layout_marginTop="@dimen/view_margin_small"/>
+
+            <com.hyrt.cnp.school.view.MyGridView
+                android:id="@+id/cnp_gridview_custody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:verticalSpacing="6dp"
+                android:horizontalSpacing="6dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                android:layout_margin="@dimen/view_margin_small" />
+            <TextView
+                android:id="@+id/tv_class_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="其他"
+                style="@style/large_tv"
+                android:layout_marginTop="@dimen/view_margin_small"/>
+
+            <com.hyrt.cnp.school.view.MyGridView
+                android:id="@+id/cnp_gridview_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:verticalSpacing="6dp"
+                android:horizontalSpacing="6dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                android:layout_margin="@dimen/view_margin_small" />
+        </LinearLayout>
+    </com.hyrt.cnp.base.view.MtScrollView>
+</RelativeLayout>

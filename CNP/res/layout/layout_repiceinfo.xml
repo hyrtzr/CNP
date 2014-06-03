@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cnp_bg">
+
+    <TextView
+        android:id="@+id/foottimetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2013-12-10 食谱"
+        style="@style/large_tv"
+        />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/cnp_line_color"
+        android:layout_marginTop="@dimen/view_margin"
+        android:layout_marginLeft="@dimen/view_margin_small"
+        android:layout_marginRight="@dimen/view_margin_small"
+        />
+
+    <com.hyrt.cnp.base.view.BounceListView
+        android:id="@+id/schoolnotice_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1px"
+        android:layout_marginLeft="@dimen/view_margin_small"
+        android:layout_marginRight="@dimen/view_margin_small"
+        />
+</LinearLayout>

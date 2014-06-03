@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cnp_bg">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff">
+        <LinearLayout
+            android:id="@+id/notice_first"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            style="@style/container_view"
+            >
+            <TextView
+                style="@style/large_tv"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/schoolnotice_title"
+                android:lines="1"/>
+            <TextView
+                style="@style/small_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center"
+                android:id="@+id/schoolnotice_time_name"
+                android:lines="1"/>
+
+           <include layout="@layout/vitrual_line"/>
+
+            <TextView
+                style="@style/small_tv_1"
+                android:layout_marginTop="0dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="left"
+                android:id="@+id/schoolnotice_content"
+                android:lines="4"
+                android:ellipsize="end"/>
+            <LinearLayout
+                android:id="@+id/layout_alter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:paddingRight="40dp"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/tv_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/medium_tv"
+                    android:textColor="@color/schoolindex_notice"
+                    android:text="修改 | "
+                    android:layout_margin="0dp"/>
+                <TextView
+                    android:id="@+id/tv_del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/medium_tv"
+                    android:textColor="@color/schoolindex_notice"
+                    android:text="删除"
+                    android:layout_margin="0dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/cnp_line_color"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/layout_bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_bottom_margin">
+            <include layout="@layout/layout_bottom_num"></include>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_above="@id/layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <com.hyrt.cnp.base.view.XListView
+                android:id="@+id/schoolnotice_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/cnp_line_color"
+                android:dividerHeight="1px"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

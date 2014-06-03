@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/schoolindex_notice"
+    android:id="@+id/list_item">
+    <RelativeLayout
+        style="@style/schoolindex_itemlayout">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/item_text"
+                style="@style/schoolindex_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通知公告" />
+
+            <ImageView
+                android:id="@+id/item_image"
+                style="@style/schoolindex_image_size"
+                android:src="@drawable/schoolindex_notice" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

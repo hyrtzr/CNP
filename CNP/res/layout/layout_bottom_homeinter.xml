@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@color/actionbar_bg"
+            android:layout_alignBottom="@id/item_image">
+            <RelativeLayout
+                android:id="@+id/layout_parent_alldynamic"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_homeinter_item">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/layout_bottom_alldynamic">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cnp_alldynamic"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/view_margin_smallest"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全部动态"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/schoolindex_textcolor" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/layout_bottom_alldynamic_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="2"
+                    android:background="@drawable/bat_bg"
+                    android:layout_alignRight="@id/layout_bottom_alldynamic"
+                    android:visibility="gone"/>
+                </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout_parent_aboutme"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/layout_bottom_aboutme">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cnp_aboutme"
+                        android:layout_gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="与我相关"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/schoolindex_textcolor" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/layout_bottom_aboutme_num"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="22"
+                    android:textColor="#fff"
+                    android:layout_marginTop="@dimen/view_margin_smallest"
+                    android:background="@drawable/bat_bg"
+                    android:layout_alignRight="@id/layout_bottom_aboutme"
+                    android:textSize="10sp"
+                    android:visibility="gone"/>
+                </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout_parent_myindex"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/layout_bottom_myindex">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cnp_myindex"
+                        android:layout_gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的主页"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/schoolindex_textcolor" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/layout_bottom_myindex_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="2"
+                    android:background="@drawable/bat_bg"
+                    android:layout_alignRight="@id/layout_bottom_myindex"
+                    android:visibility="gone"/>
+                </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout_parent_ablums"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/layout_bottom_ablums">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cnp_myablum"
+                        android:layout_gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="动感相册"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/schoolindex_textcolor" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/layout_bottom_ablums_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="12"
+                    android:background="@drawable/bat_bg"
+                    android:layout_alignRight="@id/layout_bottom_ablums"
+                    android:visibility="gone"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cnp_homeday"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/item_image"
+            />
+    </RelativeLayout>
+</LinearLayout>

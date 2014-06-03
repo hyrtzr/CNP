@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="编写内容...."
+        style="@style/medium_tv"
+        android:textColor="@color/cnp_text_color"/>
+    <TextView
+        android:id="@+id/text_context"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/medium_tv"
+        android:text="编写内容...."
+        android:background="@drawable/cnp_bg"
+        android:gravity="center_vertical"
+        android:padding="@dimen/view_margin_small"
+        android:textColor="@android:color/secondary_text_dark"
+        />
+    <EditText
+        android:id="@+id/edit_context"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="5"
+        android:background="@drawable/shape_sendword_line"
+        style="@style/medium_tv"
+        android:gravity="top"
+        android:padding="@dimen/view_margin_small"
+        android:textCursorDrawable="@null"
+        android:hint="请输入..."
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        </LinearLayout>
+</LinearLayout>

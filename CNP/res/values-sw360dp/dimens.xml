@@ -1,0 +1,133 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="main_user_relative_height">250dp</dimen>
+    <dimen name="main_user_backtv_size">18dp</dimen>
+    <dimen name="main_user_updatecore_tvheight">50dp</dimen>
+    <dimen name="main_user_face_marginleft">28dp</dimen>
+    <dimen name="main_user_face_marginbottom">8dp</dimen>
+    <dimen name="main_user_cover_marginbottom">-50dp</dimen>
+    <dimen name="main_user_intro_marginbottom">8dp</dimen>
+    
+    <!-- account -->
+     <dimen name="activity_horizontal_margin_small">12dp</dimen>
+    <dimen name="activity_horizontal_margin">30dp</dimen>
+    <dimen name="activity_paddingtop">14dp</dimen>
+
+    <dimen name="container_height">100dp</dimen>
+    <dimen name="container_padding">12dp</dimen>
+
+    <dimen name="imageview_width_small">76dp</dimen>
+    <dimen name="iamgeview_margin_right">25dp</dimen>
+
+    <dimen name="user_login_logo_margintop">46dp</dimen>
+    <dimen name="user_login_et_height">45dp</dimen>
+    <dimen name="user_login_nameet_margintop">44dp</dimen>
+    <dimen name="user_login_et_margintop">16dp</dimen>
+    <dimen name="user_login_et_paddleft">12dp</dimen>
+    <dimen name="user_login_btn_margintop">25dp</dimen>
+    <dimen name="user_login_btn_height">45dp</dimen>
+
+    <dimen name="tv_normal">14sp</dimen>
+    <dimen name="tv_paddingtop">12dp</dimen>
+    <dimen name="tv_width">120dp</dimen>
+    <dimen name="tv_padding">16dp</dimen>
+
+    <dimen name="lv_divider_height">0.5dp</dimen>
+    
+    <!-- base -->
+<!--     <dimen name="activity_horizontal_margin">16dp</dimen> -->
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="layout_actionbar_title_text_size">25sp</dimen>
+    <dimen name="layout_actionbar_title_back_marginLeft">24dp</dimen>
+
+    <dimen name="schoolindex_image_size_w_h">37dp</dimen>
+    <dimen name="cnp_schoolindex_item_height">100dp</dimen>
+    <dimen name="schoolindex_text_marginBottom">10dp</dimen>
+    <dimen name="schoolindex_text_size">15sp</dimen>
+    <dimen name="banner_h_w">200dp</dimen>
+    <dimen name="cnp_school_pop_img_height">230dp</dimen>
+    <dimen name="cnp_school_layout_margin">9dp</dimen>
+
+    <!--元素之间的间距-->
+    <dimen name="view_margin">15dp</dimen>
+    <dimen name="view_margin_small">9dp</dimen>
+    <dimen name="view_margin_smallest">3dp</dimen>
+    <dimen name="view_bottom_margin">50dp</dimen>
+    <!--容器控件的外间距-->
+    <dimen name="container_margin">9dp</dimen>
+
+    <!--图片的大小-->
+    <dimen name="imageview_biggest">270dp</dimen>
+    <dimen name="imageview_big">170dp</dimen>
+    <dimen name="imageview_medium">110dp</dimen>
+    <dimen name="imageview_small">90dp</dimen>
+    <dimen name="imageview_smallest">80dp</dimen>
+    <dimen name="imageview_super_small">50dp</dimen>
+
+    <dimen name="cnp_school_text_margin">15dp</dimen>
+    <dimen name="cnp_school_text_size">15sp</dimen>
+    <dimen name="cnp_school_text_size_min">18sp</dimen>
+    <dimen name="cnp_school_text_size_max">25sp</dimen>
+    <dimen name="cnp_school_text_margin_min">1dp</dimen>
+    <dimen name="cnp_school_text_margin_max">3dp</dimen>
+    <dimen name="cnp_school_item_text_size">20sp</dimen>
+    <dimen name="cnp_school_image_height_min">110dp</dimen>
+    <dimen name="cnp_school_image_height_mun">130dp</dimen>
+    <dimen name="cnp_school_image_height_max">170dp</dimen>
+    <dimen name="cnp_school_image_height_bar">200dp</dimen>
+    <dimen name="cnp_school_gridview_margin">3dp</dimen>
+    <dimen name="cnp_classroom_ablum_img_height">90dp</dimen>
+    <dimen name="cnp_classroom_photo_img_height">80dp</dimen>
+    <dimen name="cnp_dynamic_item_image_height">55dp</dimen>
+    <dimen name="cnp_dynamic_babay_title_height">300dp</dimen>
+    <dimen name="cnp_dynamic_babay_title_image_height">220dp</dimen>
+    
+    <!-- classroom -->
+    <!-- <dimen name="activity_horizontal_margin">24dp</dimen>
+    <dimen name="activity_vertical_margin">24dp</dimen>
+    <dimen name="layout_actionbar_title_text_size">25sp</dimen>
+    <dimen name="layout_actionbar_title_back_marginLeft">24dp</dimen>
+
+
+    <dimen name="cnp_school_layout_margin">9dp</dimen>
+    <dimen name="cnp_school_text_margin">15dp</dimen>
+    <dimen name="cnp_school_text_size">15sp</dimen>
+    <dimen name="cnp_school_text_size_min">18sp</dimen>
+    <dimen name="cnp_school_text_size_max">25sp</dimen>
+    <dimen name="cnp_school_text_margin_min">1dp</dimen>
+    <dimen name="cnp_school_text_margin_max">3dp</dimen>
+    <dimen name="cnp_school_item_text_size">20sp</dimen>
+    <dimen name="cnp_school_image_height_min">110dp</dimen>
+    <dimen name="cnp_school_image_height_mun">130dp</dimen>
+    <dimen name="cnp_school_image_height_max">170dp</dimen>
+    <dimen name="cnp_school_image_height_bar">200dp</dimen>
+    <dimen name="cnp_school_gridview_margin">3dp</dimen>
+    <dimen name="cnp_school_pop_img_height">230dp</dimen>
+    <dimen name="cnp_classroom_ablum_img_height">90dp</dimen>
+    <dimen name="cnp_classroom_photo_img_height">80dp</dimen>--> 
+    
+    <!-- school -->
+ <!--    <dimen name="activity_horizontal_margin">24dp</dimen>
+    <dimen name="activity_vertical_margin">24dp</dimen>
+
+
+    <dimen name="cnp_school_text_margin">15dp</dimen>
+    <dimen name="cnp_school_text_size">15sp</dimen>
+    <dimen name="cnp_school_text_size_min">18sp</dimen>
+    <dimen name="cnp_school_text_size_max">25sp</dimen>
+    <dimen name="cnp_school_text_margin_min">1dp</dimen>
+    <dimen name="cnp_school_text_margin_max">16dp</dimen>
+    <dimen name="cnp_school_item_text_size">20sp</dimen>
+    <dimen name="cnp_school_image_height_min">110dp</dimen>
+    <dimen name="cnp_school_image_height_max">170dp</dimen>
+    <dimen name="cnp_school_image_height_bar">200dp</dimen>
+    <dimen name="cnp_school_gridview_margin">3dp</dimen> -->
+
+    <dimen name="cnp_school_intro_layoutheight">210dp</dimen>
+    <dimen name="cnp_school_text_margin_bottom">1dp</dimen>
+
+    <dimen name="cnp_school_search_result_bar_hegiht">58dp</dimen>
+    <dimen name="search_result_spinner_cur_line_height">23dp</dimen>
+</resources>

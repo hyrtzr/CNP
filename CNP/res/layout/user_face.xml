@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin_small"
+    android:paddingRight="@dimen/activity_horizontal_margin_small"
+    android:paddingTop="@dimen/activity_paddingtop">
+
+    <RelativeLayout
+        style="@style/RelativeLayout"
+        android:background="@null">
+
+        <ImageView
+            android:id="@+id/big_face"
+            style="@style/FaceBigIv"
+            android:src="#000000" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/upload_face"
+        style="@style/medium_tv"
+        android:layout_width="@dimen/imageview_face"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/user_btn_item_border"
+        android:gravity="center"
+        android:text="@string/face_from_album" />
+
+    <Button
+        android:id="@+id/upload_face_camera"
+        style="@style/medium_tv"
+        android:layout_width="@dimen/imageview_face"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/user_btn_item_border"
+        android:gravity="center"
+        android:text="@string/face_from_camera" />
+
+
+</LinearLayout>

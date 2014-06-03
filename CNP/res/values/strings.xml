@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">幼教家园</string>
+    <string name="click_usercover">点击设置个人封面</string>
+    <string name="main_userinfo_menutv">我的资料</string>
+    <string name="main_userclass_menutv">我的班级</string>
+    <string name="main_userschool_menutv">我的幼儿园</string>
+    <string name="main_schoolsearch_menutv">幼儿园搜索</string>
+    <string name="main_mydaynamic_menutv">家园互动</string>
+    
+    <!-- account -->
+    <string name="title_activity_main">LoginActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_activity_authenticating">Logging in…</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="get_account_prompt">请联系宝宝所在\n幼儿园的班主任,\n以获取登录账号。</string>
+    <string name="face_from_album">上传头像照片</string>
+    <string name="face_from_camera">摄像拍摄照片</string>
+    <string name="update_password">修改密码</string>
+    <string name="update_signature">修改个性签名</string>
+    <string name="update_info">保存修改</string>
+    <string name="userout">退出当前账户</string>
+
+
+    <string name="user_login_pg">登陆中…</string>
+    <string name="user_info_pg">获取用户信息中…</string>
+    <string name="user_face_pg">修改头像中…</string>
+    <string name="user_facebg_pg">修改个人封面中…</string>
+    <string name="user_pwd_pg">修改密码中…</string>
+    <string name="user_updateinfo_pg">修改资料中…</string>
+    <string name="update_face">修改头像</string>
+
+
+    <string name="login_notice">登陆提示</string>
+    <string name="error_username">你输入的用户名密码错误,请重新输入!</string>
+
+    <string name="face_msg_title">上传头像提示</string>
+    <string name="face_msg_content">上传头像成功!</string>
+    <string name="face_msgerror_content">上传头像失败,请稍后再试!</string>
+
+    <string name="facebg_msg_title">上传封面背景提示</string>
+    <string name="facebg_msg_content">上传封面背景成功!</string>
+    <string name="facebg_msgerror_content">上传封面背景失败,请稍后再试!</string>
+
+    <string name="getinfo_msg_title">友情提示</string>
+    <string name="getinfod_msgerror_content">获取资料失败,请稍后再试!</string>
+
+    <string name="pwd_msg_title">修改密码提示</string>
+    <string name="pwd_msg_content">修改成功!</string>
+    <string name="pwd_msgerror_content">修改失败,请稍后再试!</string>
+
+    <string name="info_msg_title">修改资料提示</string>
+    <string name="info_msg_content">修改成功!</string>
+    <string name="info_msgerror_content">修改失败,请稍后再试!</string>
+
+
+    <string name="login_title">登陆</string>
+    <string name="usermain_title">用户主页</string>
+    <string name="userface_title">头像修改</string>
+    <string name="userpassword_title">密码修改</string>
+    <string name="userinfo_title">用户资料</string>
+    
+    <!-- base -->
+    <string name="picupload_title">请选择上传方式</string>
+    <string name="camera_upload">相机拍摄</string>
+    <string name="classroombabay">班级成员</string>
+    <string name="classroomnotice">班级公告</string>
+    <string name="dayrecipe">今日食谱</string>
+    <string name="classroomphoto">班级相册</string>
+    <string name="classroomphotoinfo">班级专辑</string>
+    <string name="classroomname">我的班级</string>
+    <string name="schoolinfo">园所介绍</string>
+    <string name="myschool">我的幼儿园</string>
+    <string name="schoolword">园长寄语</string>
+    <string name="schoolphoto">活动剪辑</string>
+    <string name="starteacher">明星教师</string>
+    <string name="starbabay">明星宝宝</string>
+    <string name="classroomsetting">班级设置</string>
+    <string name="weekrecipe">每周食谱</string>
+    <string name="babayword">童言稚语</string>
+    <string name="setcommit">发评论</string>
+    <string name="setzfcommit">转发动态</string>
+    <string name="commitlist">评论信息</string>
+    <string name="homeinter">全部动态</string>
+    <string name="adddynamic">发布动态</string>
+    <string name="adddynamicphoto">上传照片</string>
+    <string name="adddynamicphoto_success">上传成功</string>
+    <string name="adddynamicphoto_fail">上传失败</string>
+    <string name="itmylist">\@我的</string>
+    <string name="commentdy">评论动态</string>
+    <string name="school_search">幼儿园搜索</string>
+    <string name="school_search_result">搜索结果</string>
+    <string name="school_city_list">城市列表</string>
+    <string name="about_friend">\@的人</string>
+    <string name="album_list">我的相册</string>
+    <string name="phone_album">手机相册</string>
+
+    <string name="select_from_album">从手机照片选择</string>
+
+<!--     <string name="user_info_pg">获取用户信息中…</string> -->
+
+    <string name="nodata_title">温馨提示</string>
+    <string name="nodata_content">暂时无数据，请稍后再试!</string>
+    <string name="nodata_addcommentfial">添加失败!</string>
+    
+    <!-- classroom -->
+    <string name="nodata_commentfial">暂无评论!</string>
+    <string name="nodata_addphotofial">发送失败!</string>
+    
+    <!-- dynamic -->
+    <string name="select_ablum_fail">选择文件图片出错</string>
+    
+    <!-- school -->
+     <string name="myschool_title">我的幼儿园</string>
+    <string name="schoolinfo_title">园所介绍</string>
+    <string name="schoolnotice_title">通知公告</string>
+    <string name="schoolrecipe_title">每周食谱</string>
+    <string name="starteacher_title">明星教师</string>
+
+    <string name="starteacher_pg">获取明星教师中…</string>
+    <string name="starbaby_pg">获取明星宝宝中…</string>
+    <string name="schoolrecipe_pg">获取学校食谱中…</string>
+    <string name="photo_pg">获取活动剪辑中…</string>
+    <string name="notice_pg">获取通知公告中…</string>
+    <string name="schoolinfo_pg">获取园所介绍中…</string>
+    <string name="personinfo_pg">获取资料中…</string>
+
+    <string name="school_into_text">幼儿园介绍</string>
+    <string name="earth_text">地理位置</string>
+
+    <string name="search_hint">输入搜索内容.....</string>
+    <string name="search_btn_text">搜索</string>
+    <string name="school_city_list_cancle">取消</string>
+
+</resources>

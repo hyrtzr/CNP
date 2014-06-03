@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_sendword_no_top_line"
+    >
+    <TextView
+        android:id="@+id/item_foottime"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        style="@style/medium_tv"
+        android:layout_marginBottom="@dimen/view_margin"
+        android:text="早餐"
+        android:singleLine="true"
+        android:minWidth="100dp"
+        />
+    <TextView
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="#d8d7d3"/>
+    <TextView
+        android:id="@+id/item_footcont"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="fjldjfdlkjj"
+        style="@style/medium_tv"
+        android:layout_marginBottom="@dimen/view_margin"
+        />
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/view_margin_small"
+            android:layout_marginRight="@dimen/view_margin_smallest"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_index_dynamic"
+                android:layout_width="fill_parent"
+                android:layout_height="175dp"
+                android:layout_marginBottom="@dimen/view_margin_smallest"
+                android:background="#f85982"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_dynamic_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_index_dynamic" />
+
+                    <TextView
+                        android:id="@+id/layout_bottom_alldynamic_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-8dp"
+                        android:layout_toRightOf="@id/iv_dynamic_icon"
+                        android:background="@drawable/bat_bg"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="2"
+                        android:textColor="#f85982"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/medium_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin_smallest"
+                    android:text="家园互动"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_index_classroom"
+                android:layout_width="fill_parent"
+                android:layout_height="175dp"
+                android:layout_marginTop="@dimen/view_margin_smallest"
+                android:background="#ff684a"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_index_classroom" />
+
+                <TextView
+                    style="@style/medium_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的班级"
+                    android:layout_marginTop="@dimen/view_margin_smallest"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/view_margin_smallest"
+            android:layout_marginRight="@dimen/view_margin_small"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_index_user"
+                android:layout_width="fill_parent"
+                android:layout_height="86dp"
+                android:layout_marginBottom="@dimen/view_margin_smallest"
+                android:background="#74e4f5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_index_user" />
+
+                <TextView
+                    style="@style/medium_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的资料"
+                    android:layout_marginTop="@dimen/view_margin_smallest"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_index_school"
+                android:layout_width="fill_parent"
+                android:layout_height="172dp"
+                android:layout_marginBottom="@dimen/view_margin_smallest"
+                android:layout_marginTop="@dimen/view_margin_smallest"
+                android:background="#fd8e4a"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_index_school" />
+
+                <TextView
+                    style="@style/medium_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的幼儿园"
+                    android:layout_marginTop="@dimen/view_margin_smallest"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_index_search"
+                android:layout_width="fill_parent"
+                android:layout_height="86dp"
+                android:layout_marginTop="@dimen/view_margin_smallest"
+                android:background="#84d017"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_index_search" />
+
+                <TextView
+                    style="@style/medium_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="幼儿园搜索"
+                    android:layout_marginTop="@dimen/view_margin_smallest"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

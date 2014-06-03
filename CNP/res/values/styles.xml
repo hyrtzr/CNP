@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+   <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"> 
+        <!-- Customize your theme here. -->
+  </style>  
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="LinearLayout_SuperParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:weightSum">3</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:layout_marginTop">-20dp</item>
+        <item name="android:layout_height">170dp</item>
+    </style>
+
+    <style name="MenuIv">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="MenuTv">
+        <item name="android:textColor">@color/menuTv</item>
+        <item name="android:textSize">@dimen/tv_normal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+    
+    <!-- account -->
+    <style name="Spinner">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDrawable">@drawable/spinner</item>
+        <item name="android:indeterminateDuration">2000</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+
+    <style name="EditText">
+            <item name="android:layout_height">@dimen/user_login_et_height</item>
+               <item name="android:layout_width">match_parent</item>
+               <item name="android:background">@drawable/et_bg</item>
+                <item name="android:textColor">@android:color/black</item>
+               <item name="android:paddingLeft">@dimen/user_login_et_paddleft</item>
+                <item name="android:singleLine">true</item>
+                <!-- tools:ignore="NewApi" -->
+                <item name="android:textCursorDrawable"  >@drawable/text_cursor_holo_light</item>
+           </style>
+
+    <style name="EditText_small">
+        <item name="android:layout_height">@dimen/user_login_et_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/tv_normal</item>
+        <item name="android:singleLine">true</item>
+        <!-- tools:ignore="NewApi" -->
+        <item name="android:textCursorDrawable" >@drawable/text_cursor_holo_light</item>
+    </style>
+
+        <style name="Button">
+            <item name="android:textColor">@color/btn_text</item>
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">@dimen/user_login_btn_height</item>
+            <item name="android:background">@drawable/btn_bg</item>
+            <item name="android:layout_marginTop">@dimen/user_login_btn_margintop</item>
+            <item name="android:layout_gravity">center_horizontal</item>
+        </style>
+
+    <style name="Button_small">
+        <item name="android:textColor">@color/btn_text</item>
+        <item name="android:layout_width">275dp</item>
+        <item name="android:layout_height">@dimen/user_login_btn_height</item>
+        <item name="android:background">@drawable/btn_bg</item>
+        <item name="android:layout_marginTop">@dimen/user_login_btn_margintop</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+
+
+    <style name="TextView">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/tv_normal</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="indexIv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/android_list_idex</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="FaceBigIv">
+        <item name="android:layout_width">275dp</item>
+        <item name="android:layout_height">275dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@drawable/et_bg</item>
+    </style>
+
+    <style name="RelativeLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:padding">@dimen/container_padding</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/et_bg</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="ListView">
+        <item name="android:background">@drawable/et_bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:divider">@color/lv_divider</item>
+        <item name="android:dividerHeight">@dimen/lv_driver_height</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    
+    <!-- base -->
+    <!-- 全局actionbar标题样式设置 -->
+    <style name="Widget.Edu.ActionBar.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+<!-- <item name="android:backgroundSplit">#000000</item>
+        <item name="android:backgroundStacked">#ffffff</item> -->
+    <!-- 11版本以下的actionbar样式 -->
+    <!-- <style name="Widget.Edu.ActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="titleTextStyle">@style/Widget.Edu.ActionBar.Title</item>
+        
+        <item name="android:background">@color/actionbar_bg</item>
+        <item name="android:actionMenuTextAppearance">?android:attr/textAppearanceMedium</item>
+    </style>  -->
+
+    <!-- Tab选项标签的样式 -->
+    <style name="MyActionBarTabStyle" parent="android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/actionbar_tab_bg2</item>
+    </style>
+
+    <!-- Tab选项标签字体的样式 -->
+    <style name="MyActionBarTabTextStyle" parent="android:style/Widget.Holo.Light.ActionBar.TabText">
+        <item name="android:textColor">@color/actionbar_bg</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+  <!--   <style name="Spinner">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDrawable">@drawable/spinner</item>
+        <item name="android:indeterminateDuration">2000</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style> -->
+    <style name="layout_actionbar_title_text">
+        <item name="android:textColor">@color/actionbar_title_text</item>
+        <item name="android:textSize">@dimen/layout_actionbar_title_text_size</item>
+    </style>
+    <style name="layout_actionbar_title_back">
+        <item name="android:layout_marginLeft">@dimen/layout_actionbar_title_back_marginLeft</item>
+    </style>
+
+    <style name="cnp_school_layout">
+        <item name="android:layout_marginLeft">@dimen/cnp_school_layout_margin</item>
+        <item name="android:layout_marginRight">@dimen/cnp_school_layout_margin</item>
+        <item name="android:layout_marginTop">@dimen/cnp_school_layout_margin</item>
+    </style>
+
+    <style name="demo1">
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+
+   <!-- 基本字体样式-->
+    <style name="base_tv">
+        <item name="android:layout_marginLeft">@dimen/view_margin</item>
+        <item name="android:layout_marginRight">@dimen/view_margin</item>
+        <item name="android:layout_marginTop">@dimen/view_margin</item>
+    </style>
+
+    <!--大字体样式-->
+    <style name="large_tv" parent="base_tv">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!--普通字体样式-->
+    <style name="medium_tv" parent="base_tv">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+
+    <!--小字体样式-->
+    <style name="small_tv_1" parent="base_tv">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!--灰色小字体样式-->
+    <style name="small_tv" parent="base_tv">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">#474747</item>
+    </style>
+
+    <style name="small_tv_2" parent="base_tv">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#474747</item>
+    </style>
+
+    <!--容器视图样式-->
+    <style name="container_view">
+        <item name="android:layout_margin">@dimen/container_margin</item>
+        <item name="android:padding">@dimen/container_margin</item>
+    </style>
+
+
+    <!--头像样式-->
+    <style name="face_iv">
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:src">@drawable/cnp_spinner_inner</item>
+    </style>
+
+    <style name="FaceIv">
+        <item name="android:layout_width">76.5dp</item>
+        <item name="android:layout_height">76.5dp</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:background">@drawable/shape_sendword_line</item>
+        <item name="android:layout_marginRight">25dp</item>
+    </style>
+    <style name="schoolindex_itemlayout">
+        <item name="android:layout_height">@dimen/cnp_schoolindex_item_height</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+    <style name="schoolindex_text">
+        <item name="android:textColor">@color/schoolindex_textcolor</item>
+        <item name="android:textSize">@dimen/schoolindex_text_size</item>
+        <item name="android:layout_marginBottom">@dimen/schoolindex_text_marginBottom</item>
+    </style>
+
+    <style name="schoolindex_image_size">
+        <item name="android:layout_width">@dimen/schoolindex_image_size_w_h</item>
+        <item name="android:layout_height">@dimen/schoolindex_image_size_w_h</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@color/dialog_bg</item>
+
+    </style>
+    
+    <!-- classroom -->
+    <style name="cnp_school_text_min">
+        <item name="android:layout_marginLeft">@dimen/cnp_school_text_margin</item>
+        <item name="android:layout_marginRight">@dimen/cnp_school_text_margin</item>
+        <item name="android:layout_marginBottom">@dimen/cnp_school_text_margin_min</item>
+        <item name="android:layout_marginTop">@dimen/cnp_school_text_margin_min</item>
+        <item name="android:textSize">@dimen/cnp_school_text_size_min</item>
+        <item name="android:textColor">@color/cnp_text_color</item>
+    </style>
+    <style name="cnp_school_text_max">
+        <item name="android:layout_marginLeft">@dimen/cnp_school_text_margin</item>
+        <item name="android:layout_marginRight">@dimen/cnp_school_text_margin</item>
+        <item name="android:layout_marginBottom">@dimen/cnp_school_text_margin_max</item>
+        <item name="android:layout_marginTop">@dimen/cnp_school_text_margin_max</item>
+        <item name="android:textSize">@dimen/cnp_school_text_size_max</item>
+        <item name="android:textColor">@color/cnp_text_color</item>
+    </style>
+    <style name="cnp_school_text">
+        <item name="android:layout_marginLeft">@dimen/cnp_school_text_margin</item>
+        <item name="android:layout_marginRight">@dimen/cnp_school_text_margin</item>
+        <item name="android:layout_marginBottom">@dimen/cnp_school_text_margin_min</item>
+        <item name="android:layout_marginTop">@dimen/cnp_school_text_margin_min</item>
+        <item name="android:textSize">@dimen/cnp_school_text_size</item>
+        <item name="android:textColor">@color/cnp_text_color</item>
+    </style>
+
+    <!-- school -->
+    <!-- Base application theme. -->
+  <!--   <style name="AppTheme" parent="Theme.AppCompat">
+        Customize your theme here.
+    </style>
+    <style name="layout_actionbar_title_text">
+        <item name="android:textColor">@color/actionbar_title_text</item>
+        <item name="android:textSize">@dimen/layout_actionbar_title_text_size</item>
+    </style>
+    <style name="layout_actionbar_title_back">
+        <item name="android:layout_marginLeft">@dimen/layout_actionbar_title_back_marginLeft</item>
+    </style>
+
+
+
+
+    <style name="cnp_school_text_min">
+        <item name="android:layout_marginLeft">@dimen/cnp_school_text_margin</item>
+        <item name="android:layout_marginRight">@dimen/cnp_school_text_margin</item>
+        <item name="android:layout_marginBottom">@dimen/cnp_school_text_margin_min</item>
+        <item name="android:layout_marginTop">@dimen/cnp_school_text_margin_min</item>
+        <item name="android:textSize">@dimen/cnp_school_text_size_min</item>
+        <item name="android:textColor">@color/cnp_text_color</item>
+    </style>
+    <style name="cnp_school_text_max">
+        <item name="android:layout_marginLeft">@dimen/cnp_school_text_margin</item>
+        <item name="android:layout_marginRight">@dimen/cnp_school_text_margin</item>
+        <item name="android:layout_marginBottom">@dimen/cnp_school_text_margin_bottom</item>
+        <item name="android:layout_marginTop">@dimen/cnp_school_text_margin_max</item>
+        <item name="android:textColor">@color/cnp_text_color</item>
+    </style>
+    <style name="cnp_school_text">
+        <item name="android:layout_marginLeft">@dimen/cnp_school_text_margin</item>
+        <item name="android:layout_marginRight">@dimen/cnp_school_text_margin</item>
+        <item name="android:layout_marginBottom">@dimen/cnp_school_text_margin_min</item>
+        <item name="android:layout_marginTop">@dimen/cnp_school_text_margin_min</item>
+        <item name="android:textSize">@dimen/cnp_school_text_size</item>
+        <item name="android:textColor">@color/cnp_text_color</item>
+    </style> -->
+  
+
+</resources>

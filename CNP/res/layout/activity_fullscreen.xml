@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cnp_bg_color">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:src="@drawable/huabottom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        tools:context="com.hyrt.app.FullscreenActivity">
+
+        <include layout="@layout/user_main_top" />
+
+
+        <LinearLayout style="@style/LinearLayout_SuperParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/mydaynamic"
+                    style="@style/MenuIv"
+                    android:src="@drawable/ic_mydynamic" />
+
+                <TextView
+                    style="@style/MenuTv"
+                    android:layout_below="@+id/mydaynamic"
+                    android:text="@string/main_mydaynamic_menutv" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/my_class"
+                    style="@style/MenuIv"
+                    android:background="@drawable/my_class" />
+
+                <TextView
+                    style="@style/MenuTv"
+                    android:layout_below="@+id/my_class"
+                    android:text="@string/main_userclass_menutv" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/my_school"
+                    style="@style/MenuIv"
+                    android:src="@drawable/my_school" />
+
+                <TextView
+                    style="@style/MenuTv"
+                    android:layout_below="@+id/my_school"
+                    android:text="@string/main_userschool_menutv" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout_SuperParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/my_info"
+                    style="@style/MenuIv"
+                    android:background="@drawable/my_info" />
+
+                <TextView
+                    style="@style/MenuTv"
+                    android:layout_below="@+id/my_info"
+                    android:text="@string/main_userinfo_menutv" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/schoolsearch"
+                    style="@style/MenuIv"
+                    android:background="@drawable/ic_search" />
+
+                <TextView
+                    style="@style/MenuTv"
+                    android:layout_below="@+id/schoolsearch"
+                    android:text="@string/main_schoolsearch_menutv" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible">
+
+                <ImageView
+                    style="@style/MenuIv"
+                    android:background="@drawable/my_info" />
+
+                <TextView
+                    style="@style/MenuTv"
+                    android:text="@string/main_userinfo_menutv" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

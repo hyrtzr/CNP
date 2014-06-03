@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cnp_bg">
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        style="@style/medium_tv"
+        android:padding="16dp"
+        android:textColor="#7e7e7e"
+        android:text="相册名称"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cnp_line_color"/>
+    <EditText
+        android:id="@+id/ablum_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/medium_tv"
+        android:hint="相册名称......"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        style="@style/medium_tv"
+        android:padding="16dp"
+        android:textColor="#7e7e7e"
+        android:text="相册描述"
+        android:layout_marginTop="@dimen/view_margin"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cnp_line_color"/>
+    <EditText
+        android:id="@+id/ablum_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/medium_tv"
+        android:hint="相册描述......"/>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="main_user_update_covercolor">#33000000</color>
+
+    <color name="line_color">#D3CFCC</color>
+
+    <color name="menuTv">#75726D</color>
+    
+    <!-- account -->
+    <color name="bg">#EDEDED</color>
+    <color name="btn_text">#FFFFFF</color>
+<!--     <color name="text">#000000</color> -->
+    <color name="lv_divider">#a8a7a8</color>
+    
+    <!-- base -->
+    <color name="base_background_1">#F9F9F9</color>
+    <color name="base_background_2">#fff3f3f3</color>
+    <color name="text">#1E1E1E</color>
+    <color name="actionbar_bg">#6ecbd9</color>
+    <color name="cnp_text_color">#333333</color>
+    <color name="cnp_background">#fdfcf7</color>
+    <color name="cnp_line_color">#d8d7d3</color>
+    <color name="cnp_text_color_black">#000000</color>
+    <color name="schoolindex_notice">#45d8ec</color>
+    <color name="schoolindex_sendword">#92d603</color>
+    <color name="schoolindex_photo">#f4bf01</color>
+    <color name="schoolindex_starteacher">#ed6d00</color>
+    <color name="schoolindex_starstudent">#f85982</color>
+    <color name="schoolindex_schoolinfo">#84d016</color>
+    <color name="schoolindex_classroom">#c169da</color>
+    <color name="schoolindex_recipe">#ff684b</color>
+    <color name="schoolindex_textcolor">#ffffff</color>
+    <color name="actionbar_title_text">#ffffff</color>
+    <color name="sendword_text_color">#000000</color>
+    <color name="classroomindex_notice">#ed6e00</color>
+    <color name="classroomindex_recipe">#f75982</color>
+    <color name="classroomindex_photo">#84d017</color>
+    <color name="classroomindex_member">#c169db</color>
+    <color name="classroomindex_teacher">#44d7ec</color>
+    <color name="text_bottom">#797454</color>
+    <color name="dialog_bg">#99000000</color>
+    <color name="cnp_bg_color">#fffee6</color>
+    <color name="sendbtn_enable_color">#cfcfcf</color>
+    
+    <!-- school -->
+  <!--   <color name="base_background_1">#F9F9F9</color>
+    <color name="base_background_2">#fff3f3f3</color>
+    <color name="cnp_background">#fdfcf7</color>
+    <color name="cnp_line_color">#d8d7d3</color>
+    <color name="cnp_text_color_black">#000000</color>
+    <color name="schoolindex_notice">#45d8ec</color>
+    <color name="schoolindex_sendword">#92d603</color>
+    <color name="schoolindex_photo">#f4bf01</color>
+    <color name="schoolindex_starteacher">#ed6d00</color>
+    <color name="schoolindex_starstudent">#f85982</color>
+    <color name="schoolindex_schoolinfo">#84d016</color>
+    <color name="schoolindex_classroom">#c169da</color>
+    <color name="schoolindex_recipe">#ff684b</color>
+    <color name="schoolindex_textcolor">#ffffff</color>
+    <color name="actionbar_title_text">#ffffff</color>
+    <color name="sendword_text_color">#000000</color> -->
+    <color name="search_result_item_range_color">#91bbc1</color>
+    <color name="search_result_item_gray">#b0aeae</color>
+    <color name="search_result_item_content_color">#717070</color>
+    <color name="search_result_item_title_color">#3f3f3f</color>
+    <color name="search_result_item_line_color">#dfdfdf</color>
+    <color name="search_result_spinner_item_text">#767676</color>
+    <color name="search_result_spinner_cur_line">#c8c8c8</color>
+    <color name="search_city_list_line">#f48f36</color>
+</resources>

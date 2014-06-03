@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="upload_type">
+        <item>选择相册</item>
+        <item>相机拍摄</item>
+    </string-array>
+
+
+</resources>

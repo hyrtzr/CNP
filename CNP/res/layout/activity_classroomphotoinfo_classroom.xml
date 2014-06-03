@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cnp_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <com.hyrt.cnp.base.view.MtScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cnp_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            style="@style/cnp_school_layout">
+            <ImageView
+                android:id="@+id/img_photo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/imageview_biggest"
+                android:background="@drawable/shape_sendword_line"
+                android:src="@drawable/spinner_inner"/>
+
+            <TextView
+                android:id="@+id/text_albumname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/medium_tv"
+                android:layout_marginLeft="0dp"
+                android:textColor="@color/cnp_text_color"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/text_photoname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/medium_tv"
+                android:layout_marginLeft="0dp"
+                android:textColor="@color/cnp_text_color"
+                android:text="" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/view_margin_smallest"
+                android:background="@color/cnp_line_color"
+                />
+
+            <EditText
+                android:id="@+id/edit_commit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="3"
+                android:maxLines="5"
+                style="@style/medium_tv"
+                android:textCursorDrawable="@null"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/shape_sendword_line"
+                android:padding="@dimen/view_margin_smallest"
+                android:gravity="top"
+                />
+
+            <TextView
+                android:id="@+id/btn_set"
+                android:layout_width="@dimen/imageview_smallest"
+                android:layout_height="wrap_content"
+                android:text="发 送"
+                style="@style/medium_tv"
+                android:padding="@dimen/view_margin_smallest"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:background="@color/classroomindex_teacher"
+                android:layout_gravity="right"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/view_margin_small"
+                android:background="@color/cnp_line_color" />
+            <com.hyrt.cnp.base.view.Mylistview
+                android:id="@+id/commit_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="@dimen/cnp_school_layout_margin"
+                style="@style/base_tv"
+                android:layout_marginBottom="@dimen/cnp_school_layout_margin"
+                android:background="@drawable/cnp_bg" />
+        </LinearLayout>
+    </com.hyrt.cnp.base.view.MtScrollView>
+
+
+
+
+</LinearLayout>

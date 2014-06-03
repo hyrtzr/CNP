@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cnp_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/container_view"
+        >
+        <TextView
+            android:id="@+id/recipe_last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上一天"
+            style="@style/medium_tv"
+            android:padding="@dimen/view_margin_smallest"
+            android:layout_margin="0dp"
+            android:textColor="#ffffff"
+            android:background="@color/classroomindex_teacher"
+            android:visibility="gone"/>
+        <TextView
+            android:gravity="center"
+            android:id="@+id/foottimetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2013-12-10 食谱"
+            android:layout_weight="1"
+            style="@style/medium_tv"
+            android:layout_margin="0dp"
+            />
+        <TextView
+            android:id="@+id/recipe_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一天"
+            style="@style/medium_tv"
+            android:padding="@dimen/view_margin_smallest"
+            android:layout_margin="0dp"
+            android:textColor="#ffffff"
+            android:background="@color/classroomindex_teacher"
+           android:visibility="gone"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/layout_bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_bottom_margin">
+            <include layout="@layout/layout_bottom_num"></include>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_above="@id/layout_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/cnp_line_color"
+                android:layout_marginLeft="@dimen/view_margin_small"
+                android:layout_marginRight="@dimen/view_margin_small"
+                android:layout_marginTop="@dimen/view_margin_small"/>
+
+            <com.hyrt.cnp.base.view.BounceListView
+                android:id="@+id/recipeinfo_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="1px"
+                android:layout_marginLeft="@dimen/view_margin_small"
+                android:layout_marginRight="@dimen/view_margin_small"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 11以下的全局样式 -->
+    <style name="Theme.edu.Sherlock" parent="@style/Theme.Base.AppCompat">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="actionBarStyle">@style/Widget.Edu.ActionBar</item>
+    </style> 
+
+    <style name="MyFullscreenTheme" parent="@style/Theme.Base.AppCompat">
+        <item name="android:windowBackground">@drawable/cnp_loading</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style> 
+
+</resources>

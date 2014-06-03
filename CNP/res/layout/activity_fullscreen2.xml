@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cnp_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/user_main_top" />
+    <!--<com.hyrt.cnp.base.view.BounceScrollView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_marginTop="@dimen/view_margin_small"-->
+        <!--android:layout_marginBottom="@dimen/view_margin_small">-->
+       <!--<include layout="@layout/layout_main_portal"/>-->
+    <!--</com.hyrt.cnp.base.view.BounceScrollView>-->
+    <com.hyrt.cnp.base.view.BounceListView
+        android:id="@+id/lv_portal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="always"
+        android:layout_marginTop="@dimen/view_margin_small"/>
+</LinearLayout>

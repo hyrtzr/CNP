@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_seach_result_item_pic"
+        android:layout_width="@dimen/imageview_small"
+        android:layout_height="@dimen/imageview_small"
+        android:layout_margin="@dimen/view_margin_small"
+        android:layout_weight="0"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/search_result_item_content_offsetY">
+
+        <TextView
+            android:id="@+id/tv_search_item_title"
+            style="@style/medium_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/search_result_item_title_color"
+            android:text="海淀辅大幼儿园" />
+
+        <TextView
+            android:id="@+id/tv_search_item_range"
+            style="@style/small_tv"
+            android:textColor="@color/search_result_item_range_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:layout_alignBottom="@id/tv_search_item_title"
+            android:text="200米"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_search_item_line"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tv_search_item_title"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginRight="@dimen/view_margin"
+            android:layout_marginTop="@dimen/view_margin_small"
+            android:background="@color/search_result_item_line_color" />
+
+        <LinearLayout
+            android:id="@+id/layout_search_item_intro1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_search_item_line"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginTop="@dimen/view_margin_smallest"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/small_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:text="性质："
+                android:textColor="@color/search_result_item_gray" />
+
+            <TextView
+                android:id="@+id/tv_search_item_property"
+                style="@style/small_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:textColor="@color/search_result_item_content_color"
+                android:text="公立" />
+
+            <TextView
+                style="@style/small_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="@dimen/view_margin"
+                android:text="职工人数："
+                android:textColor="@color/search_result_item_gray" />
+
+            <TextView
+                android:id="@+id/tv_search_item_staff_num"
+                style="@style/small_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:textColor="@color/search_result_item_content_color"
+                android:text="350人" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_search_item_intro2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_search_item_intro1"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginTop="@dimen/view_margin_smallest"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/small_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:text="建院时间："
+                android:textColor="@color/search_result_item_gray" />
+
+            <TextView
+                android:id="@+id/tv_search_item_found_time"
+                style="@style/small_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:textColor="@color/search_result_item_content_color"
+                android:text="2001年8月25号" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_search_item_intro3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_search_item_intro2"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginTop="@dimen/view_margin_smallest"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/small_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:text="地址："
+                android:textColor="@color/search_result_item_gray" />
+
+            <TextView
+                android:id="@+id/tv_search_item_address"
+                style="@style/small_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:textColor="@color/search_result_item_content_color"
+                android:text="北京市海淀区花园路西里" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

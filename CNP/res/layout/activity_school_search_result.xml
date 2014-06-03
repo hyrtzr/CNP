@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cnp_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/cnp_school_search_result_bar_hegiht"
+        android:background="#fff"
+        android:layout_weight="0">
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/medium_tv"
+            android:text="返回"
+            android:layout_centerVertical="true"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cnp_school_search_result_bar_hegiht"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/tv_search_result_title"
+                style="@style/large_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/view_margin_small"
+                android:text="@string/school_search_result" />
+
+            <TextView
+                android:id="@+id/tv_search_result_position"
+                style="@style/small_tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_search_result_title"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toRightOf="@id/tv_search_result_title"
+                android:text="北京" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_search_result_position"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@id/tv_search_result_position"
+                android:background="@drawable/search_position_delta" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/cnp_school_search_result_bar_hegiht"
+        android:background="@drawable/bg_search_result_bar"
+        android:layout_weight="0">
+
+        <LinearLayout
+            android:id="@+id/layout_school_search_result_district"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_school_search_result_district"
+                style="@style/medium_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:text="区域"
+                android:textColor="@color/search_result_spinner_item_text" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_down" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="@dimen/search_result_spinner_cur_line_height"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:background="@color/search_result_spinner_cur_line" />
+
+        <LinearLayout
+            android:id="@+id/layout_school_search_result_property"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_school_search_result_property"
+                style="@style/medium_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:text="性质"
+                android:textColor="@color/search_result_spinner_item_text" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_down" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="@dimen/search_result_spinner_cur_line_height"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:background="@color/search_result_spinner_cur_line" />
+
+        <LinearLayout
+            android:id="@+id/layout_school_search_result_staff_num"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_school_search_result_staff_num"
+                style="@style/medium_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:text="办园规模"
+                android:textColor="@color/search_result_spinner_item_text" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_school_search_result_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <com.hyrt.cnp.base.view.XListView
+            android:id="@+id/xlv_school_search_result_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:dividerHeight="@dimen/search_result_list_divider_height"
+            android:divider="#00000000"/>
+        <TextView
+            android:id="@+id/tv_school_search_result_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="暂无数据"
+            android:textColor="@android:color/black"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

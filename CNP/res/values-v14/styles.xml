@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- 14版本以上的actionbar样式 -->
+    <style name="Widget.Edu.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/actionbar_bg</item>
+        <item name="android:titleTextStyle">@style/Widget.Edu.ActionBar.Title</item>
+        <item name="android:backgroundStacked">#ffffff</item>
+        <item name="android:backgroundSplit">#000000</item>
+    </style>
+</resources>

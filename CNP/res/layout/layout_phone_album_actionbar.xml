@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/action_bar_title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="取消"
+        android:layout_marginLeft="@dimen/view_margin"
+        style="@style/medium_tv"
+        />
+    <TextView
+        android:id="@+id/action_bar_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="我的幼儿园"
+        style="@style/layout_actionbar_title_text"
+        />
+</RelativeLayout>

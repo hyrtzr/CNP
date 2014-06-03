@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/view_margin_small"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/comment_photo"
+        style="@style/FaceIv"
+        android:layout_gravity="left"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/view_margin_small">
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/medium_tv"
+            android:layout_margin="0dp"
+            android:textColor="@color/cnp_text_color"
+            android:singleLine="true"
+            android:text=""/>
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/small_tv"
+            android:layout_margin="0dp"
+            android:textColor="@color/cnp_text_color"
+            android:singleLine="true"
+            android:text=""/>
+        <TextView
+            android:id="@+id/text_con"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/medium_tv"
+            android:layout_margin="0dp"
+            android:textColor="@color/cnp_text_color"
+            android:singleLine="true"
+            android:text=""/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_comment_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/comment_huifu"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 回复"
+            style="@style/small_tv"
+            android:layout_margin="0dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+</LinearLayout>

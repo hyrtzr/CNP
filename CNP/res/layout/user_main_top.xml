@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/face_parentLl"
+        android:layout_marginBottom="@dimen/main_user_cover_marginbottom"
+        android:paddingLeft="1px"
+        android:scaleType="centerCrop"
+        android:id="@+id/facebg_iv" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_user_updatecore_tvheight"
+        android:gravity="center"
+        android:id="@+id/update_cover"
+        android:background="@color/main_user_update_covercolor">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/main_user_backtv_size"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:text="@string/click_usercover" />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#4cffffff"
+        android:layout_below="@id/update_cover"/>
+
+    <LinearLayout
+        android:layout_above="@+id/intro"
+        android:id="@+id/face_parentLl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            style="@style/FaceIv"
+            android:src="@drawable/face"
+            android:id="@+id/face_iv"
+            android:layout_marginBottom="@dimen/main_user_face_marginbottom"
+            android:layout_marginLeft="@dimen/main_user_face_marginleft"
+           />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/name_tv"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/face_iv"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:textColor="@color/menuTv"
+        android:id="@+id/intro"
+        android:layout_marginLeft="@dimen/main_user_face_marginleft"
+        android:layout_above="@+id/line_index"
+        android:layout_marginBottom="@dimen/main_user_intro_marginbottom"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@color/line_color"
+        android:id="@+id/line_index"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

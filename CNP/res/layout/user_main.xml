@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/bg"
+    android:paddingLeft="@dimen/activity_horizontal_margin_small"
+    android:paddingRight="@dimen/activity_horizontal_margin_small"
+    android:paddingTop="@dimen/activity_paddingtop">
+
+    <RelativeLayout
+        android:id="@+id/user_info"
+        style="@style/RelativeLayout">
+
+        <ImageView
+            style="@style/FaceIv"
+            android:id="@+id/user_face"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user_face"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextView"
+                android:id="@+id/name_tv" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/tv_paddingtop"
+                style="@style/TextView"
+                android:id="@+id/class_tv" />
+
+        </LinearLayout>
+        
+        <ImageView
+            style="@style/indexIv"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/update_face"
+        style="@style/RelativeLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update_face"
+                style="@style/TextView"
+                 />
+
+        <ImageView
+            style="@style/indexIv"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/update_password"
+        style="@style/RelativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update_password"
+            style="@style/TextView"
+            />
+
+        <ImageView
+            style="@style/indexIv"/>
+
+    </RelativeLayout>
+
+    <Button
+        style="@style/Button"
+        android:layout_below="@+id/user_info_listview"
+        android:text="@string/userout"
+        android:id="@+id/userout_btn" />
+
+</LinearLayout>

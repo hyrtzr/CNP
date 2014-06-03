@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cnp_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_title_top"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/actionbar_bg">
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            style="@style/medium_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:text="取消"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tv_send"
+            style="@style/medium_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:text="保存"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tv_action_title"
+            style="@style/large_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="0dp"
+            android:text="班级公告"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/view_margin_small"
+        android:layout_marginBottom="@dimen/view_margin_small"
+        android:background="#fff">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/view_margin_small"
+        android:layout_marginTop="@dimen/view_margin_small"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/medium_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:text="标题名称：" />
+
+        <EditText
+            android:id="@+id/et_notice_title"
+            style="@style/medium_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@null"
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@null" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        style="@style/medium_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="@dimen/view_margin_small"
+        android:text="内容描述：" />
+
+    <EditText
+        android:id="@+id/et_notice_content"
+        style="@style/medium_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="0dp"
+        android:background="@null"
+        android:gravity="top"
+        android:textCursorDrawable="@null" />
+    </LinearLayout>
+</LinearLayout>

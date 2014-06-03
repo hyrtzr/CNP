@@ -1,0 +1,25 @@
+<resources>
+
+    <style name="FullscreenTheme" parent="android:Theme.Holo">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="android:Widget.Holo.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+    
+    <!-- base -->
+    <!-- 11版本到14的actionbar样式 -->
+    <style name="Widget.Edu.ActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@color/actionbar_bg</item>
+        <item name="android:titleTextStyle">@style/Widget.Edu.ActionBar.Title</item>
+        <item name="android:backgroundSplit">#000000</item>
+        <item name="android:backgroundStacked">#ffffff</item>
+        <item name="android:actionMenuTextAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+</resources>

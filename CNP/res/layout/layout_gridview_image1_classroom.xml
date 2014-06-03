@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.hyrt.cnp.base.view.BounceGridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cnp_gridview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:numColumns="4"
+    android:verticalSpacing="6dp"
+    android:horizontalSpacing="6dp"
+    android:stretchMode="columnWidth"
+    android:gravity="center"
+    style="@style/cnp_school_layout"/>

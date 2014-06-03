@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cnp_bg">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/schoolimage"
+            android:layout_marginTop="@dimen/cnp_school_layout_margin"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:id="@+id/schoolintro"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:padding="@dimen/view_margin_small"
+            android:background="#a0ffffff"
+            android:textColor="@color/cnp_text_color"
+            android:layout_alignParentBottom="true"
+            android:singleLine="true"/>
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/schoolindexlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:verticalSpacing="6dp"
+        android:horizontalSpacing="6dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        style="@style/cnp_school_layout"
+        ></GridView>
+</LinearLayout>

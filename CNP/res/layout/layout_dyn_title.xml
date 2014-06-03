@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="#ffffff"
+    android:focusableInTouchMode="false"
+    android:focusable="false"
+    android:filterTouchesWhenObscured="false">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/face_parentLl"
+        android:layout_marginBottom="-50dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageView"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:id="@+id/update_cover"
+        android:background="#10000000"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/medium_tv"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:text="点击设置个人封面" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_above="@+id/intro"
+        android:id="@+id/face_parentLl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            style="@style/FaceIv"
+            android:id="@+id/face_iv"
+            android:layout_marginBottom="@dimen/view_margin_small"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="0dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/name_tv"
+                android:layout_marginLeft="@dimen/view_margin"
+                style="@style/medium_tv"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:textColor="#75726D"
+        android:id="@+id/intro"
+        android:layout_marginLeft="28dp"
+        android:layout_above="@+id/line_index"
+        android:layout_marginBottom="8dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="#D3CFCC"
+        android:id="@+id/line_index"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#4cffffff"
+        android:layout_below="@id/layout_title_top"/>
+
+</RelativeLayout>

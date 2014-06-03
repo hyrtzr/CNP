@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 幼儿园banner -->
+    <string name="path_school_banner">http://img.chinaxueqian.com/nursery/</string>
+    <!--<string name="path_school_banner">http://img.chinaxueqian.com/nurserytest/</string>-->
+
+    <!-- 班级banner -->
+    <string name="path_classroom_banner">http://img.chinaxueqian.com/classroom/</string>
+    <!--<string name="path_classroom_banner">http://img.chinaxueqian.com/classroomtest/</string>-->
+
+    <!-- 用户头像 -->
+    <string name="path_user_face">http://img.chinaxueqian.com/avatar/</string>
+    <!--<string name="path_user_face">http://img.chinaxueqian.com/avatartest/</string>-->
+
+    <!-- 相册封面 -->
+    <string name="path_album_img">http://img.chinaxueqian.com/OAthumb/</string>
+    <!--<string name="path_album_img">http://img.chinaxueqian.com/OAthumbtest/</string>-->
+
+    <!-- api地址 -->
+    <string name="path_api">http://api.chinaxueqian.com/</string>
+    <!--<string name="path_api">http://apitest.chinaxueqian.com/</string>-->
+</resources>
