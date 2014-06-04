@@ -18,6 +18,7 @@ public class SchoolSearchRequest extends NotNeedLoginBaseRequest{
     private String keytName, keytDistrict, keytProperty, keytScale;
     private Double lng, lat;
     private String province;
+    private String more = "1";
 
 //    @Inject
 //    private SchoolSearchService mSchoolSearchService;
@@ -36,13 +37,30 @@ public class SchoolSearchRequest extends NotNeedLoginBaseRequest{
         this.lng = lng;
         this.lat = lat;
         this.province = province;
+        this.more = "1";
     }
+    
+    public SchoolSearchRequest(Class clazz, Context context,
+            String keytName, String keytDistrict,
+            String keytProperty, String keytScale,
+            double lng, double lat, String province,
+            String more) {
+		super(clazz, context);
+		this.keytName = keytName;
+		this.keytDistrict = keytDistrict;
+		this.keytProperty = keytProperty;
+		this.keytScale = keytScale;
+		this.lng = lng;
+		this.lat = lat;
+		this.province = province;
+		this.more = more;
+	}
 
     @Override
     public Base run() {
         return notNeedLoginService.getSchoolSearchData(
                 getRestTemplate(), keytName,
-                keytDistrict, keytProperty, keytScale, lng, lat, province);
+                keytDistrict, keytProperty, keytScale, lng, lat, province, more);
     }
 
     @Override

@@ -157,27 +157,49 @@ public class SchoolSearch implements Serializable {
         private static final int serialVersionUID = -1;
 
         private ArrayList<SchoolSearch> data;
+        private String more;
 
         @Override
-        public boolean equals(Object o) {
-            if (this == o) {return true;}
-            if (o == null || getClass() != o.getClass()) {return false;}
-            if (!super.equals(o)) {return false;}
-
-            Model model = (Model) o;
-            if (data != null ? !data.equals(model.data) : model.data != null) {return false;}
-
-            return true;
-        }
-
-        @Override
-        public int hashCode() {
-            int result = super.hashCode();
-            result = 31 * result + (data != null ? data.hashCode() : 0);
-            return result;
-        }
-
-        public ArrayList<SchoolSearch> getData() { return data;}
-        public void setData(ArrayList<SchoolSearch> data) { this.data = data;}
+		public int hashCode() {
+			final int prime = 31;
+			int result = 1;
+			result = prime * result + ((data == null) ? 0 : data.hashCode());
+			result = prime * result + ((more == null) ? 0 : more.hashCode());
+			return result;
+		}
+        
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj)
+				return true;
+			if (obj == null)
+				return false;
+			if (getClass() != obj.getClass())
+				return false;
+			Model other = (Model) obj;
+			if (data == null) {
+				if (other.data != null)
+					return false;
+			} else if (!data.equals(other.data))
+				return false;
+			if (more == null) {
+				if (other.more != null)
+					return false;
+			} else if (!more.equals(other.more))
+				return false;
+			return true;
+		}
+		
+		public String getMore() {
+			return more;
+		}
+		
+		public void setMore(String more) {
+			this.more = more;
+		}
+		
+		public ArrayList<SchoolSearch> getData() { return data;}
+		
+		public void setData(ArrayList<SchoolSearch> data) { this.data = data;}
     }
 }

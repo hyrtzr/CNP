@@ -46,7 +46,8 @@ public class NotNeedLoginService {
 
     public SchoolSearch.Model getSchoolSearchData(
             RestTemplate restTemplate, String keytName,
-            String keytDistrict, String keytProperty, String keytScale, Double lng, Double lat, String province){
+            String keytDistrict, String keytProperty, String keytScale,
+            Double lng, Double lat, String province, String more){
         android.util.Log.i("tag", "keytName:"+keytName+" keytDistrict:"+keytDistrict
                 +" keytProperty："+keytProperty+" keytScale:"+keytScale+" lng:"+lng+" lat:"+lat
                 +" province："+province);
@@ -68,6 +69,9 @@ public class NotNeedLoginService {
         }
         if (province != null && province.length() > 0) {
             path.append("&province="+province);
+        }
+        if(more != null && !"1".equals(more)){
+        	path.append("&isMore=old,"+more);
         }
 
         LogHelper.i("tag", "path:"+path);

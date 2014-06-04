@@ -179,7 +179,7 @@ public class SchoolSearchResultActivity extends BaseActivity {
                                 tvPosition.setText(position);
                                 progress.dismiss();
                                 progress = null;
-                                loadData();
+                                loadData(false);
                             }
                         });
                     } else {
@@ -207,7 +207,7 @@ public class SchoolSearchResultActivity extends BaseActivity {
     /**
      * 加载数据
      */
-    private void loadData(){
+    private void loadData(boolean isMore){
         if(provinceId == null){
             BaseUserVarRequestListener mUserVarRequestListener = new BaseUserVarRequestListener(this, "province");
             mUserVarRequestListener.setListener(new BaseUserVarRequestListener.RequestListener() {
@@ -232,16 +232,32 @@ public class SchoolSearchResultActivity extends BaseActivity {
         }else{
             loadCity();
         }
+        
+        SchoolSearchRequest mRequest = null;
+        if(isMore){
+        	mRefreshState = ON_LOAD_MORE;
+        	if(mDatas.size() > 0){
+        		int more = mDatas.get(mDatas.size()-1).getNursery_id();
+        		mRequest = new SchoolSearchRequest(
+                        SchoolSearch.Model.class, this,
+                        mkeytName, mKeytDistrict, mKeytProperty, mKeytStaffNum, lng, lat, provinceId, more+"");
+        	}
+        }else{
+        	mRefreshState = ON_REFRESH_DATA;
+        	mRequest = new SchoolSearchRequest(
+                    SchoolSearch.Model.class, this,
+                    mkeytName, mKeytDistrict, mKeytProperty, mKeytStaffNum, lng, lat, provinceId);
+        }
 
         SchoolSearchRequestListener mRequestListener = new SchoolSearchRequestListener(this);
         mRequestListener.setListener(mOnRequestListener);
-        SchoolSearchRequest mRequest = new SchoolSearchRequest(
-                SchoolSearch.Model.class, this,
-                mkeytName, mKeytDistrict, mKeytProperty, mKeytStaffNum, lng, lat, provinceId);
-        spiceManager.execute(
-                mRequest, mRequest.getcachekey(),
-                DurationInMillis.ONE_SECOND * 10,
-                mRequestListener.start());
+        
+        if(mRequest != null){
+        	spiceManager.execute(
+        			mRequest, mRequest.getcachekey(),
+        			DurationInMillis.ONE_SECOND * 10,
+        			mRequestListener.start());
+        }
     }
 
     public void loadCity(){
@@ -476,7 +492,7 @@ public class SchoolSearchResultActivity extends BaseActivity {
             tvDistrict.setText(text);
 //            if (mKeytDistrict.length() > 0) {
                 mRefreshState = ON_REFRESH_DATA;
-                loadData();
+                loadData(false);
 //            }
         }
     };
@@ -497,7 +513,7 @@ public class SchoolSearchResultActivity extends BaseActivity {
             tvProperty.setText(text);
 //            if (mKeytProperty.length() > 0) {
                 mRefreshState = ON_REFRESH_DATA;
-                loadData();
+                loadData(false);
 //            }
         }
     };
@@ -534,7 +550,7 @@ public class SchoolSearchResultActivity extends BaseActivity {
             tvStaffNum.setText(text);
 //            if (mKeytStaffNum.length() > 0) {
                 mRefreshState = ON_REFRESH_DATA;
-                loadData();
+                loadData(false);
 //            }
         }
     };
@@ -589,19 +605,19 @@ public class SchoolSearchResultActivity extends BaseActivity {
                 Toast.makeText(SchoolSearchResultActivity.this, "正在加载,请稍后!", Toast.LENGTH_SHORT).show();
             } else {
                 mRefreshState = ON_REFRESH_DATA;
-                loadData();
+                loadData(false);
             }
             xlvSearchResult.stopRefresh();
         }
 
         @Override
         public void onLoadMore() {
-           /* if (mRefreshState == ON_REFRESH_DATA || mRefreshState == ON_LOAD_MORE) {
+            if (mRefreshState == ON_REFRESH_DATA || mRefreshState == ON_LOAD_MORE) {
                 Toast.makeText(SchoolSearchResultActivity.this, "正在加载,请稍后!", Toast.LENGTH_SHORT).show();
             } else {
                 mRefreshState = ON_LOAD_MORE;
-                loadData();
-            }*/
+                loadData(true);
+            }
             xlvSearchResult.stopLoadMore();
         }
     };
@@ -642,7 +658,7 @@ public class SchoolSearchResultActivity extends BaseActivity {
                 lng = tempLng;
             }
             tvPosition.setText(provinceName);
-            loadData();
+            loadData(false);
         }
     }
 
