@@ -4,6 +4,7 @@ package com.hyrt.cnp.base.account.model;
 import android.text.SpannableString;
 
 import com.hyrt.cnp.base.account.utils.FaceUtils;
+import com.hyrt.cnp.base.account.utils.LogHelper;
 import com.hyrt.cnp.base.account.utils.StringUtils;
 
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
@@ -420,8 +421,10 @@ public class Dynamic implements Serializable {
     }
     public String getPosttime3() {
         try {
+        	LogHelper.i("tag", "excepition:"+StringUtils.millTimeToNormalTime(posttime));
             return StringUtils.friendly_time(StringUtils.millTimeToNormalTime(posttime));
         } catch (Exception e) {
+        	
             e.printStackTrace();
         }
         return "";

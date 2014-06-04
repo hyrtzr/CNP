@@ -82,6 +82,7 @@ public class StringUtils
 				ftime = Math.max((cal.getTimeInMillis() - time.getTime()) / 60000,1)+"分钟前";
 			else 
 				ftime = hour+"小时前";
+			LogHelper.i("tag", "ftime2:"+ftime);
 			return ftime;
 		}
 		
@@ -104,9 +105,11 @@ public class StringUtils
 		else if(days > 2 && days <= 10){ 
 			ftime = days+"天前";			
 		}
-		else if(days > 10){			
+		else if(days > 10 || days < 0){			
 			ftime = dateFormater2.get().format(time);
 		}
+		
+		LogHelper.i("tag", "ftime:"+ftime);
 		return ftime;
 	}
 	
@@ -393,17 +396,18 @@ public class StringUtils
             } else if (browStart >= aboutEnd) {
                 if(browStart < browEnd){
                     final String str = tempStr.substring(browStart, browEnd+6);
-//                android.util.Log.i("tag", "str:" + str);
+//                LogHelper.i("tag", "str:" + str);
                     tempStr = tempStr.substring(0, browStart);
-
-                    Drawable drawable = context.getResources().getDrawable((brows.get(str)));
-                    drawable.setBounds(0, 0, drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight());
-                    ImageSpan span = new ImageSpan(drawable, ImageSpan.ALIGN_BASELINE);
-                    spannable.setSpan(
-                            span,
-                            browStart,
-                            browEnd+6,
-                            Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+                    if((brows.get(str)) != null && (brows.get(str)) > 0){
+                    	Drawable drawable = context.getResources().getDrawable((brows.get(str)));
+                    	drawable.setBounds(0, 0, drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight());
+                    	ImageSpan span = new ImageSpan(drawable, ImageSpan.ALIGN_BASELINE);
+                    	spannable.setSpan(
+                    			span,
+                    			browStart,
+                    			browEnd+6,
+                    			Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+                    }
                 }else{
                     tempStr = tempStr.substring(0, tempStr.length()-1);
                 }

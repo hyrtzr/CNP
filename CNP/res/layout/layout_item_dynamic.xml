@@ -45,7 +45,6 @@
                     android:id="@+id/dynamic_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
                     style="@style/small_tv"
                     android:textColor="@color/schoolindex_photo"
                     android:gravity="center_vertical"
