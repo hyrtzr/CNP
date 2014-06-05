@@ -1,7 +1,6 @@
 package com.hyrt.cnp.dynamic.fragment;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -9,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -186,7 +184,9 @@ public class MyIndexFragment extends Fragment{
             }
         }
         if(schoolRecipeRequest != null){
-            activity.spiceManager.execute(schoolRecipeRequest, schoolRecipeRequest.getcachekey(), DurationInMillis.ONE_SECOND * 10,
+            activity.spiceManager.execute(
+            		schoolRecipeRequest, schoolRecipeRequest.getcachekey(),
+            		DurationInMillis.ONE_SECOND * 10,
                     sendwordRequestListener.start());
         }
     }
