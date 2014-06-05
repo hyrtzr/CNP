@@ -72,7 +72,8 @@
         android:id="@+id/intro"
         android:layout_marginLeft="28dp"
         android:layout_above="@+id/line_index"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="@dimen/view_margin"/>
 
     <ImageView
         android:layout_width="match_parent"

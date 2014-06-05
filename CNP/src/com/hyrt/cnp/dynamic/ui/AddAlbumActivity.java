@@ -87,10 +87,10 @@ public class AddAlbumActivity extends BaseActivity{
             @Override
             public void onClick(View view) {
                 if(sendEnabled){
-                    if(albumNames != null && albumNames.contains(etName.getText().toString())){
+                    /*if(albumNames != null && albumNames.contains(etName.getText().toString())){
                         AlertUtils.getInstance().showCenterToast(AddAlbumActivity.this, "相册名重复");
                         return;
-                    }
+                    }*/
                     if(mAlbum == null){
                         MyAddAblumRequestListener requestListener = new MyAddAblumRequestListener(AddAlbumActivity.this);
                         requestListener.setListener( new MyAddAblumRequestListener.RequestListener() {
