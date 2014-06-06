@@ -17,7 +17,6 @@ import com.hyrt.cnp.account.requestListener.UserFaceRequestListener;
 import com.hyrt.cnp.base.account.model.UserDetail;
 import com.hyrt.cnp.base.account.utils.FaceUtils;
 import com.hyrt.cnp.base.account.utils.FileUtils;
-import com.hyrt.cnp.base.account.utils.ImageUtils;
 import com.hyrt.cnp.base.account.utils.LogHelper;
 import com.hyrt.cnp.base.account.utils.PhotoUpload;
 import com.jingdong.common.frame.BaseActivity;
