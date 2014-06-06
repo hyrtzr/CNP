@@ -17,6 +17,7 @@ import com.hyrt.cnp.account.requestListener.UserFaceRequestListener;
 import com.hyrt.cnp.base.account.model.UserDetail;
 import com.hyrt.cnp.base.account.utils.FaceUtils;
 import com.hyrt.cnp.base.account.utils.FileUtils;
+import com.hyrt.cnp.base.account.utils.ImageUtils;
 import com.hyrt.cnp.base.account.utils.LogHelper;
 import com.hyrt.cnp.base.account.utils.PhotoUpload;
 import com.jingdong.common.frame.BaseActivity;
@@ -54,6 +55,7 @@ public class UserFaceActivity extends BaseActivity {
                 faceFile = Uri.fromFile(FileUtils.createFile("cnp", "face.png"));
                 photoUpload = new PhotoUpload(UserFaceActivity.this, faceFile);
                 photoUpload.getFromCamera(faceFile);
+            	
             }
         });
         initData();
@@ -122,6 +124,9 @@ public class UserFaceActivity extends BaseActivity {
 //        if(requestCode == PhotoUpload.PHOTO_ZOOM && faceFile != null){
 //            LogHelper.i("tag", "faceFile:"+faceFile);
 //        }
+    	if (resultCode == RESULT_CANCELED) {
+			return;
+		}
         if (requestCode == PhotoUpload.PHOTO_ZOOM && data != null) {
             //保存剪切好的图片
             ImageLoader.getInstance().clearMemoryCache();

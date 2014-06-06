@@ -421,7 +421,6 @@ public class Dynamic implements Serializable {
     }
     public String getPosttime3() {
         try {
-        	LogHelper.i("tag", "excepition:"+StringUtils.millTimeToNormalTime(posttime));
             return StringUtils.friendly_time(StringUtils.millTimeToNormalTime(posttime));
         } catch (Exception e) {
         	

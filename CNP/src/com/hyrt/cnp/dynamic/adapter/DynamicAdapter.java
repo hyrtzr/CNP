@@ -118,7 +118,6 @@ public class DynamicAdapter extends BaseAdapter {
       
       mHolder.dynamic_name.setText(mDynamic.getUserName());
       mHolder.dynamic_type.setText(mDynamic.getType());
-      LogHelper.i("tag", "posttime3:"+mDynamic.getPosttime3());
       mHolder.dynamic_time.setVisibility(View.VISIBLE);
       mHolder.dynamic_time.setText(mDynamic.getPosttime3());
       mHolder.dynamic_time2.setText(mDynamic.getPosttime2());

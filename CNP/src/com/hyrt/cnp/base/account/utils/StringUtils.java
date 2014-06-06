@@ -82,7 +82,6 @@ public class StringUtils
 				ftime = Math.max((cal.getTimeInMillis() - time.getTime()) / 60000,1)+"分钟前";
 			else 
 				ftime = hour+"小时前";
-			LogHelper.i("tag", "ftime2:"+ftime);
 			return ftime;
 		}
 		
